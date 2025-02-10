@@ -1,6 +1,6 @@
 // Methods of array
 
-let array = ["Banana", "Orange", "Apple", "Mango", "Apple"]
+let array = ["Banana", "Orange", "Apple", "Mango", "Apple", 'strawberry']
 let array2 = ['Turiyu', [[['Papaya']]]]
 
 // Basic methods
@@ -26,6 +26,14 @@ let array2 = ['Turiyu', [[['Papaya']]]]
 // console.log(array.slice(1, 2))
 
 // Search and find methods
-console.log(array.indexOf('Apple'))
-console.log(array.lastIndexOf('Apple'))
-console.log(array.includes('apple'))
+// console.log(array.indexOf('Apple'))
+// console.log(array.lastIndexOf('Apple'))
+// console.log(array.includes('apple'))
+const arrOfObj = [
+    {        id: 1    },
+    {        id: 2    },
+    {        id: 3    },
+    {        id: 4    },
+]
+console.log(array.findLastIndex((element, index, array) => element === "Apple"));
+

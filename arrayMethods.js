@@ -2,6 +2,15 @@
 
 let array = ["Banana", "Orange", "Apple", "Mango", "Apple", 'strawberry']
 let array2 = ['Turiyu', [[['Papaya']]]]
+let arrOfNum = [3, 5, 65,6, 67, 45, 43]
+
+const reducedValue = arrOfNum.reduce((acc, curr) => {
+    console.log(acc, curr)
+    return acc + curr
+}, 0)
+
+console.log(reducedValue);
+
 
 // Basic methods
 // document.write(array)
@@ -31,9 +40,30 @@ let array2 = ['Turiyu', [[['Papaya']]]]
 // console.log(array.includes('apple'))
 const arrOfObj = [
     {        id: 1    },
-    {        id: 2    },
     {        id: 3    },
     {        id: 4    },
+    {        id: 2    },
 ]
-console.log(array.findLastIndex((element, index, array) => element === "Apple"));
+// console.log(array.findLastIndex((element, index, array) => element === "Apple"));
+
+// const data = arrOfObj.toSorted((a, b) => a.id - b.id)
+// console.log(data, arrOfObj);
+
+// let arr = []
+// arrOfObj.forEach((el) => {
+//     console.log(el);
+//     arr.push(el.id)
+// })
+// console.log(arr);
+
+const newArr = arrOfObj.map((el, i, array) => 'test')
+// console.log('newArr(**', newArr);
+
+// console.log(arrOfObj.filter((el, i , arr) => el.id == 5))
+
+// console.log(arrOfNum.every((el, i, arr) => el > 3));
+// console.log(arrOfNum.some((el, i, arr) => {
+//     console.log(el);
+//     return el > 50
+// }));
 
